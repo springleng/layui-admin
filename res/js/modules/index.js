@@ -3,6 +3,8 @@ layui.define(['layer', 'form', 'element'], function (exports) {
         layer = layui.layer,
         form = layui.form(),
         element = layui.element();
+
+    // Message dialog
     layer.msg('Hello World');
 
     // Form submit
