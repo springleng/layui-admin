@@ -11,7 +11,7 @@ layui.define(['layer', 'form', 'element'], function (exports) {
     }
 
     // Message dialog
-    layer.msg('Hello World');
+    layer.alert('Hello World');
 
     // Form submit
     form.on('submit(formDemo)', function (data) {

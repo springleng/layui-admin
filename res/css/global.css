@@ -1,3 +1,8 @@
+.layui-footer{
+    padding: 15px 0;
+    text-align: center;
+}
+
 @media screen and (max-width: 750px) {
   .layui-layout-admin .layui-side{position: fixed; top: 0; left: -260px; transition: all .3s; -webkit-transition: all .3s; z-index: 10000;}
   .layui-layout-admin .layui-body{position: static; bottom: 0; left: 0;}
