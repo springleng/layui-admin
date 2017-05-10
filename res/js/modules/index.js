@@ -2,7 +2,13 @@ layui.define(['layer', 'form', 'element'], function (exports) {
     var $ = layui.jquery,
         layer = layui.layer,
         form = layui.form(),
-        element = layui.element();
+        element = layui.element(),
+        device = layui.device();
+
+    // Deny IE7
+    if(device.ie && device.ie < 8){
+        layer.alert('Layui最低支持ie8，您当前使用的是古老的 IE'+ device.ie + '，你丫的肯定不是程序猿！');
+    }
 
     // Message dialog
     layer.msg('Hello World');
@@ -20,6 +26,17 @@ layui.define(['layer', 'form', 'element'], function (exports) {
             item.checked = data.elem.checked;
         });
         form.render('checkbox');
+    });
+
+    var treeMobile = $('.site-tree-mobile'),
+        shadeMobile = $('.site-mobile-shade')
+
+    treeMobile.on('click', function(){
+        $('body').addClass('site-mobile');
+    });
+
+    shadeMobile.on('click', function(){
+        $('body').removeClass('site-mobile');
     });
 
     exports('index', {});
