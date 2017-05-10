@@ -12,7 +12,7 @@ layui.define(['layer', 'form', 'element', 'util'], function (exports) {
     }
 
     // Message dialog
-    layer.alert('Hello World');
+    layer.alert('你丫的肯定不是程序猿！');
 
     // Form submit
     form.on('submit(formDemo)', function (data) {
@@ -34,7 +34,7 @@ layui.define(['layer', 'form', 'element', 'util'], function (exports) {
         bar1: false,
         click: function (type) {
             if (type === 'bar1') {
-                location.href = '//www.baidu.com/';
+                location.href = '//php.net/';
             }
         }
     });
