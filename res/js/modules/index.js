@@ -1,6 +1,7 @@
-layui.define(['layer', 'form', 'element'], function (exports) {
+layui.define(['layer', 'form', 'element', 'util'], function (exports) {
     var $ = layui.jquery,
         layer = layui.layer,
+        util = layui.util,
         form = layui.form(),
         element = layui.element(),
         device = layui.device();
@@ -28,6 +29,17 @@ layui.define(['layer', 'form', 'element'], function (exports) {
         form.render('checkbox');
     });
 
+    // 回到顶部
+    util.fixbar({
+        bar1: false,
+        click: function (type) {
+            if (type === 'bar1') {
+                location.href = '//www.baidu.com/';
+            }
+        }
+    });
+
+    // 兼容小屏、手机
     var treeMobile = $('.site-tree-mobile'),
         shadeMobile = $('.site-mobile-shade')
 
