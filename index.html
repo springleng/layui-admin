@@ -3,11 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Layui学习</title>
+<title>Layui admin template</title>
 <link rel="stylesheet" href="res/layui/css/layui.css">
 </head>
 <body>
-<div></div>
+<div class="layui-layout-admin">
+
+    <div class="layui-header">
+        <div class="layui-main">
+        </div>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+
+            <ul class="layui-nav layui-nav-tree">
+
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a href="javascript:;">基本元素<span class="layui-nav-more"></span></a>
+                    <dl class="layui-nav-child">
+                        <dd class="layui-this">
+                            <a href="">表单集合</a>
+                        </dd>
+                        <dd>
+                            <a href="">导航与面包屑</a>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a href="javascript:;">系统管理<span class="layui-nav-more"></span></a>
+                    <dl class="layui-nav-child">
+                        <dd class="layui-this">
+                            <a href="">用户管理</a>
+                        </dd>
+                        <dd>
+                            <a href="">角色管理</a>
+                        </dd>
+                        <dd>
+                            <a href="">系统日志</a>
+                        </dd>
+                    </dl>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="layui-body">
+        <div class="layui-main">
+            <div class="layui-tab">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">预览</li>
+                    <li>查看代码</li>
+                    <li>帮助</li>
+                </ul>
+                <div class="layui-tab-content">
+                    <div class="layui-tab-item layui-show">
+                        <div class="layui-main">
+                            11
+                        </div>
+                    </div>
+
+                    <div class="layui-tab-item">
+                        <div class="layui-main">
+                            22
+                        </div>
+                    </div>
+
+                    <div class="layui-tab-item">
+                        <div class="layui-main">
+                            33
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-footer">
+        <div class="layui-main">
+            <p>© 2017 <a href="">bayellow.com</a></p>
+        </div>
+    </div>
+
+</div>
 <script src="res/layui/layui.js"></script>
 <script>
 layui.config({
